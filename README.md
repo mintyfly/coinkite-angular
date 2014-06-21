@@ -1,10 +1,8 @@
-# Coinkite API Browser in Angular
+# Coinkite API Browser in [AngularJS](https://angularjs.org/)
 
-- [https://coinkite.com/](Coinkite Main Site)
-
-- [https://doc.coinkite.com/](Learn more about Coinkite's API here.)
-
-- [https://angularjs.org/](Learn more about AngularJS)
+[Learn more about Coinkite's API here.](https://doc.coinkite.com/)
+and visit the [Coinkite Main Site](https://coinkite.com/) to open your
+account today!
 
 ## Setup
 
@@ -13,7 +11,7 @@ You can do this easily with Python (which is probably already installed).
 
     python -m SimpleHTTPServer
 
-... and then surf to <http://localhost:8000>
+... and then surf to <http://localhost:8000> using a modern browser.
 
 When you get tired of cut-n-pasting your API key and secret, create a file
 in this directory called `my-keys.json` and it will be used to prefill those
@@ -43,13 +41,16 @@ to make this package lighter.
 
 ### Discussion
 
-We are using `$http` for the main JSON fetching. However, the typeahead
-feature fetches its data via Restangular. All API endpoints (except `/public/v1`)
-require authentication with and API key and secret.
+We are using `$http` for the main JSON resource fetching. However,
+the typeahead feature fetches its data via Restangular. All API
+endpoints (except `/public/v1`) require authentication with an API
+key and secret. The keys you need can be created on
+[Coinkite.com under Merchant / API]([https://coinkite.com/merchant/api)
+
 
 See `coinkite-api.js` for the tricky bits: it will generate the
-required headers for your requests and works under `node.js` and
-in the browser.
+required headers for your HTTP request and works under both
+`node.js` and in the browser.
 
 This is a **DEMO** program, and we would never recommend putting
 API secret keys into browser-side code in any other case.

@@ -41,7 +41,7 @@ to make this package lighter.
 
 ### Discussion
 
-We are using `$http` for the main JSON resource fetching. However,
+This example is using `$http` for the main JSON resource fetching. However,
 the typeahead feature fetches its data via Restangular. All API
 endpoints (except `/public/v1`) require authentication with an API
 key and secret. The keys you need can be created on
@@ -67,4 +67,20 @@ safely holding all your cryptocurrencies, including Bitcoin and Litecoin.
 ## Licence
 
 Code is licenced under the [2-clause BSD licence](licence.md)
+
+Copyright (c) 2014 Coinkite Inc.
+https://coinkite.com
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+### Warranty
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
 

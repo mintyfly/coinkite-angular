@@ -1,4 +1,69 @@
-coinkite-angular
-================
+# Coinkite API Browser in Angular
 
-Demo program using Coinkite's API via AngularJS magic
+- [https://coinkite.com/](Coinkite Main Site)
+
+- [https://doc.coinkite.com/](Learn more about Coinkite's API here.)
+
+- [https://angularjs.org/](Learn more about AngularJS)
+
+## Setup
+
+Use you favourite micro webserver to server `index.html` from this directory.
+You can do this easily with Python (which is probably already installed).
+
+    python -m SimpleHTTPServer
+
+... and then surf to <http://localhost:8000>
+
+When you get tired of cut-n-pasting your API key and secret, create a file
+in this directory called `my-keys.json` and it will be used to prefill those
+fields.
+
+Example `my-keys.json` file:
+
+    {
+        "api_key": "K11aaa11a-aa11a111-a11aaa11111a1aa1",
+        "api_secret": "Saa1a1aa1-11a11111-aa111aa1111aa111"
+    }
+
+### Requirements
+
+For this demo, we are using:
+
+- AngularJS <https://docs.angularjs.org>
+- Bootstrap <http://getbootstrap.com/>
+- AngularStrap <http://mgcrea.github.io/angular-strap>
+- Restangular <https://github.com/mgonto/restangular>
+- lodash (required by Restangular) <http://lodash.com/>
+- font-awesome <http://fontawesome.io/>
+- crypto-js (just HMAC-SHA256) <https://code.google.com/p/crypto-js/>
+
+All these files, except `json-print`, are being provided by CDN sources
+to make this package lighter.
+
+### Discussion
+
+We are using `$http` for the main JSON fetching. However, the typeahead
+feature fetches its data via Restangular. All API endpoints (except `/public/v1`)
+require authentication with and API key and secret.
+
+See `coinkite-api.js` for the tricky bits: it will generate the
+required headers for your requests and works under `node.js` and
+in the browser.
+
+This is a **DEMO** program, and we would never recommend putting
+API secret keys into browser-side code in any other case.
+
+
+## More about Coinkite
+
+Coinkite is the world's easiest and most powerful web wallet for
+safely holding all your cryptocurrencies, including Bitcoin and Litecoin.
+
+[Learn more about all we offer](https://coinkite.com/)
+
+
+## Licence
+
+Code is licenced under the [2-clause BSD licence](licence.md)
+

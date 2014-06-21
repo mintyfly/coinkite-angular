@@ -1,0 +1,4 @@
+# Never upload your Coinkite API keys into github. Not even if the keys are limited to
+# read-only, limited by source IP address (subnet) and limited to zero-dollars, inside Coinkite.
+#
+my-keys.json

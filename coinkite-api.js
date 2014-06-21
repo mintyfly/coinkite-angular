@@ -34,7 +34,7 @@
 
 		if(typeof CryptoJS === 'undefined') {
 		  var crypto = require('crypto');
-		  var hm = crypto.createHmac('sha256', secret).update(data).digest('hex')
+		  hm = crypto.createHmac('sha256', secret).update(data).digest('hex')
 		} else {
 		  hm = CryptoJS.HmacSHA256(data, secret).toString();
 		}

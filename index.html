@@ -2,9 +2,9 @@
 <html ng-app="cc-example-module"><head>
 
 <!-- Angular basics -->
-<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular.js"></script>
-<script src="bower_components/angular-strap/dist/angular-strap.min.js"></script>
-<script src="bower_components/angular-strap/dist/angular-strap.tpl.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.min.js"></script>
+<script src="//oss.maxcdn.com/angular.strap/2.0.2/angular-strap.min.js"></script>
+<script src="//oss.maxcdn.com/angular.strap/2.0.2/angular-strap.tpl.min.js"></script>
 
 <!-- Bootstrap CSS, but Bootstrap JS not needed nor desired -->
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
@@ -70,7 +70,7 @@
 
               <span class="input-group-btn">
                 <button ng-click="reload(auth, demo.endpoint)"
-                  class="btn btn-default"
+                  class="btn btn-default btn-primary"
                   ng-disabled="!demo.endpoint || busy"
                   >&nbsp;<i ng-class="busy ? 'fa fa-refresh fa-spin' : 'fa fa-refresh'"></i> Load&nbsp;</button>
               </span>

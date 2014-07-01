@@ -8,7 +8,7 @@ var app = angular.module('cc-example-module', ['mgcrea.ngStrap', 'json-print', '
 app.controller('mainController', function($scope, Restangular) {
 
 	// NOTE: This endpoint is public and does not require any API key to read.
-    var tmp = Restangular.all('public/v1/');
+    var tmp = Restangular.all('public/endpoints');
     tmp.getList().then(function(eps) {
         console.log("Got endpoint list ok");
 

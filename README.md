@@ -1,6 +1,6 @@
 # Coinkite API Browser in [AngularJS](https://angularjs.org/)
 
-[Learn more about Coinkite's API here](https://doc.coinkite.com/)
+[Learn more about Coinkite's API here](https://docs.coinkite.com/)
 and visit the [Coinkite Main Site](https://coinkite.com/) to open your
 account today!
 

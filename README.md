@@ -1,6 +1,6 @@
 # Coinkite API Browser in [AngularJS](https://angularjs.org/)
 
-[Learn more about Coinkite's API here.](https://doc.coinkite.com/)
+[Learn more about Coinkite's API here](https://doc.coinkite.com/)
 and visit the [Coinkite Main Site](https://coinkite.com/) to open your
 account today!
 
@@ -43,7 +43,7 @@ to make this package lighter.
 
 This example is using `$http` for the main JSON resource fetching. However,
 the typeahead feature fetches its data via Restangular. All API
-endpoints (except `/public/v1`) require authentication with an API
+endpoints (except under `/public/`) require authentication with an API
 key and secret. The keys you need can be created on
 [Coinkite.com under Merchant / API]([https://coinkite.com/merchant/api)
 

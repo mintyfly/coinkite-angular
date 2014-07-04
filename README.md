@@ -24,7 +24,7 @@ Example `my-keys.json` file:
         "api_secret": "Saa1a1aa1-11a11111-aa111aa1111aa111"
     }
 
-### Requirements
+## Requirements
 
 For this demo, we are using:
 
@@ -39,7 +39,7 @@ For this demo, we are using:
 All these files, except `json-print`, are being provided by CDN sources
 to make this package lighter.
 
-### Discussion
+## Discussion
 
 This example is using `$http` for the main JSON resource fetching. However,
 the typeahead feature fetches its data via Restangular. All API
@@ -55,6 +55,9 @@ required headers for your HTTP request and works under both
 This is a **DEMO** program, and we would never recommend putting
 API secret keys into browser-side code in any other case.
 
+## Screenshot
+
+![image](screenshot.png)
 
 ## More about Coinkite
 

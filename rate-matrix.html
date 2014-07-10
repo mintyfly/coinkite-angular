@@ -1,0 +1,91 @@
+<!doctype html>
+<html ng-app="cc-example-module"><head>
+
+<!-- Angular basics -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular-resource.min.js"></script>
+<script src="https://oss.maxcdn.com/angular.strap/2.0.2/angular-strap.min.js"></script>
+<script src="https://oss.maxcdn.com/angular.strap/2.0.2/angular-strap.tpl.min.js"></script>
+
+<!-- Bootstrap CSS, but Bootstrap JS not needed nor desired -->
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+<!-- useful array/set/dict basics -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
+
+<!-- code specific to Coinkite and this project -->
+<script src="rate-matrix.js"></script>
+
+</head>
+
+<body ng-controller="mainController">
+  <div class="container">
+	<div class="row">
+	  <div class="col-md-12">
+		<h1 class="title">
+          <span class="fa-stack">
+            <i class="fa fa-square-o fa-stack-2x"></i>
+            <i class="fa fa-exchange fa-stack-1x"></i>
+          </span>
+          CK Rate Matrix
+          <small><a href="https://coinkite.com/api">coinkite.com/api</a></small>
+		</h1>
+		<p class="lead">
+			This page demonstrates using <a href="http://angularjs.org/">AngularJS</a>
+			to fetch and display exchange rate data from Coinkite via the
+			<a href="https://dos.coinkite.com/">Coinkite API.</a>
+		</p>
+	  </div>
+	</div>
+  </div>
+
+  <div class="container">
+	<div class="row">
+	  <div class="col-md-8 col-md-offset-2">
+
+        <p class="lead" ng-show="busy">
+          <i class="fa fa-spin fa-refresh"></i> Loading...
+        </p>
+
+        <table class="table table-condensed table-hover" ng-hide="busy">
+          <thead>
+            <tr>
+              <th colspan=2><!-- this space for rent -->&nbsp;
+              </th>
+              <td ng-repeat="code in crypto_codes" class="text-right">
+                <b>{{code}}</b>
+                <br>
+                <small>{{info[code].name}}</small>
+              </td>
+            </tr>
+          <tbody>
+            <tr ng-repeat="fiat in fiat_codes">
+              <td>
+                <b>{{fiat}}</b>
+              </td>
+              <td>
+                <small>{{info[fiat].name}}</small>
+              </td>
+              <td ng-repeat="cc_code in crypto_codes" ng-init="rate = rates[cc_code][fiat]"
+                class="text-right"
+              >
+                {{rate.pretty}}
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p ng-hide="busy">
+          <button class="btn btn-sm btn-primary" ng-click="reload_rates()">
+            <i class="fa fa-refresh"></i> Reload
+          </button>
+        </p>
+
+	  </div>
+	</div>
+
+  </div>
+
+</body>
+</html>

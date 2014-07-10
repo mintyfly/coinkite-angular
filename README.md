@@ -6,7 +6,7 @@ account today!
 
 ## Setup
 
-Use you favourite micro webserver to server `index.html` from this directory.
+Use you favourite micro webserver to serve `index.html` from this directory.
 You can do this easily with Python (which is probably already installed).
 
     python -m SimpleHTTPServer

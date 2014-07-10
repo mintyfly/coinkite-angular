@@ -4,6 +4,11 @@
 and visit the [Coinkite Main Site](https://coinkite.com/) to open your
 account today!
 
+## Live Demo
+
+[coinkite.github.io/coinkite-angular](http://coinkite.github.io/coinkite-angular/)
+for a working live demo served by Github Pages.
+
 ## Setup
 
 Use you favourite micro webserver to serve `index.html` from this directory.

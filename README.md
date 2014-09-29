@@ -64,11 +64,12 @@ API secret keys into browser-side code in any other case.
 
 ![image](screenshot.png)
 
+
 ## More about Coinkite
 
-Coinkite is the world's easiest and most powerful web wallet for
-safely holding all your cryptocurrencies, including Bitcoin and Litecoin.
 
-[Learn more about all we offer](https://coinkite.com/)
+Coinkite is an [international bitcoin wallet](https://coinkite.com/faq/about) focused on [hardcore privacy](https://coinkite.com/privacy), [bank-grade security](https://coinkite.com/faq/security), developer's [API](https://coinkite.com/faq/developers), [fast](https://coinkite.com/faq/security) transaction signing and [advanced features](https://coinkite.com/faq/features).
+
+[Get Your Account Today!](https://coinkite.com/)
 
 
